@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --color-primary: #10b981;
+  --color-secondary: #059669;
+  --color-accent: #f59e0b;
+  --color-bg: #090d16;
+  --color-surface: #111827;
+  --color-surface-hover: #1f293d;
+  --color-surface-border: rgba(255, 255, 255, 0.09);
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-badge-bg: rgba(16, 185, 129, 0.15);
+  --hero-glow: radial-gradient(circle at 50% 12%, rgba(16, 185, 129, 0.18) 0%, rgba(245, 158, 11, 0.08) 40%, rgba(9, 13, 22, 0) 75%);
+  --font-scale: 1;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-royal-hindi {
+  font-family: 'Rozha One', 'Cormorant Garamond', serif;
+}
+
+.royal-arch {
+  border-radius: 140px 140px 32px 32px;
+}
+
+@media (max-width: 640px) {
+  .royal-arch {
+    border-radius: 80px 80px 24px 24px;
+  }
+}
+
+.gold-foil-border {
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 10px 40px -10px rgba(245, 158, 11, 0.15);
+}
+
+html {
+  color-scheme: dark;
+  background-color: #090d16;
+  font-size: calc(16px * var(--font-scale, 1));
+}
+
+body {
+  background-color: #090d16;
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: clip;
+}
+
+/* Static, elegant luxury highlight text - NO distracting movement */
+.shimmer-text {
+  background: linear-gradient(135deg, #34d399 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Authentic metallic royal gold gradient matching the logo monogram */
+.gold-brand-text {
+  background: linear-gradient(135deg, #fae59f 0%, #e5c158 35%, #dfb743 65%, #c59b27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Glassmorphism dark cards */
+.glass-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-border);
+}
+
+.glass-pill {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Clean, modern dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
